@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+body{
+    background: orange;
+}
+button{
+    background: black;
+    color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1000px;
+    font-size: larger;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-size: 40px;
+    font-size: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 600;
+}
+.Header{
+    height: 92vh;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.first{
+    padding: 30vh 10vw 0;
+}
+.text_Header{
+    margin-bottom: 30px;
+}
+.footer{
+    background: black;
+    height: 8vh;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer p{
+    color: inherit;
+    font-weight: lighter;
+    font-size: medium;
+}
+.footer span a{
+    color: greenyellow;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+}
+nav h1{
+    font-size: 30px;
+}
+nav button{
+    background: none;
+    border: 3px solid black;
+    color: black;
+    transition: 0.9s ease;
+}
+nav button:hover{
+    background: black;
+    border: 3px solid black;
+    color: orange;
+    transition: 0.9s ease;
+}
+
+
+.box{
+    padding-top: 11vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Cal{
+    height:fit-content;
+    border: 5px solid black;
+    width: 350px;
+    border-radius: 25px;
+    padding: 25px 20px;
+}
+.display{
+    height: calc(430px / 4.5);
+    position: relative;
+    border: 4px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.clear{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: -40px;
+    bottom: -60px;
+    border-radius: 10000px;
+}
+.display:hover .clear{
+    height: 430px;
+    width: 430px;
+    transition: 2s;
+    right: -50px;
+    bottom: -220px;
+}
+.result{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: monospace;
+    letter-spacing: -3px;
+    margin: 05px 10px;
+    width: fit-content;
+}
+.bttn{
+    border: 4px solid black;
+    font-family: monospace;
+    height: 55px ;
+    width: 55px ;
+    background: none;
+    padding: 0;
+    color: black;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    transition: 0s ease;
+}
+.bttn p{
+    color: inherit;
+    transition: 0.2s ease;
+}
+.buttons{
+    display: grid;
+    justify-content: center;
+    column-gap:15px;
+    row-gap: 12px;
+    grid-template-areas: "ca di ti su"
+                         "se ei ni pl"
+                         "fo fi si pl"
+                         "on tw th en"
+                         "ze ze do en"
+    ;
+}
+.bttn:hover{
+    color: orange;
+
+}
+.bttn:hover .underlay{
+    height: 430px;
+    width: 430px;
+    transition: 2s;
+    right: -50px;
+    bottom: -220px;
+}
+.underlay{
+    border-radius: 2000px;
+    z-index: -1;
+    transition: 0.8s ease;
+position: absolute;
+height: 20px;
+width: 20px;
+background: black;
+bottom: -15px;
+right: -15px;
+}
+.bttn:nth-child(1){
+    grid-area: ca;
+    background: black;
+    color: orange;
+}
+.bttn:nth-child(2){
+    grid-area: di;
+}
+.bttn:nth-child(3){
+    grid-area: ti;
+}
+.bttn:nth-child(4){
+    grid-area: su;
+}
+
+.bttn:nth-child(5){
+    grid-area: se;
+}
+.bttn:nth-child(6){
+    grid-area: ei;
+}
+.bttn:nth-child(7){
+    grid-area: ni;
+}
+
+.bttn:nth-child(8){
+    grid-area: fo;
+}
+.bttn:nth-child(9){
+    grid-area: fi;
+}
+.bttn:nth-child(10){
+    grid-area: si;
+}
+
+
+.bttn:nth-child(11){
+    grid-area: on;
+}
+.bttn:nth-child(12){
+    grid-area: tw;
+}
+.bttn:nth-child(13){
+    grid-area: th;
+}
+
+.bttn:nth-child(14){
+    grid-area: ze;
+    width: 100%;
+}
+.bttn:nth-child(15){
+    grid-area: do;
+}
+
+.bttn:nth-child(16){
+    grid-area: pl;
+    height: 100%;
+}
+.bttn:nth-child(17){
+    grid-area: en;
+    height: 100%;
+    background: black;
+    color: orange;
+}
