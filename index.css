@@ -35,11 +35,13 @@ p{
 .Header{
     height: 92vh;
     
-    display: flex;
-    justify-content: space-between;
+    
 }
 .first{
     padding: 30vh 10vw 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .text_Header{
     margin-bottom: 30px;
@@ -54,6 +56,7 @@ p{
     position: fixed;
     width: 100%;
     bottom: 0;
+    text-align: center;
 }
 .footer p{
     color: inherit;
@@ -74,19 +77,9 @@ nav{
 nav h1{
     font-size: 30px;
 }
-nav button{
-    background: none;
-    border: 3px solid black;
-    color: black;
-    transition: 0.9s ease;
-}
-nav button:hover{
-    background: black;
-    border: 3px solid black;
+ nav button{
     color: orange;
-    transition: 0.9s ease;
 }
-
 
 .box{
     padding-top: 11vh;
@@ -253,4 +246,36 @@ right: -15px;
     height: 100%;
     background: black;
     color: orange;
+}
+
+
+@media screen and (max-width: 500px) {
+    .box{
+
+        padding-top: 19vh;
+        display: flex;
+        justify-content: center;
+        zoom: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .box{
+
+        padding-top: 28vh;
+        display: flex;
+        justify-content: center;
+        zoom: 80%;
+    }
+    .footer{
+    background: black;
+    height: 9vh;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
 }
